@@ -1,16 +1,17 @@
 import time
-
-print ("Dit is een keuze verhaal")
-time.sleep(1.5)
-print ("Dit verhaal heeft 4 verschillende eindes")
-time.sleep(2)
-print ("Je hebt maar 1 goed einde dus good luck on your journey")
-time.sleep(2)
-print ("Voor dit verhaal zullen we jouw naam gebruiken dus vul die maar hierin: ")
-
+print("wat is jouw naam?")
 inputnaam = input()
 
-def Verhaalstukje1():
+def deel0():
+    print ("Dit is een keuze verhaal")
+    time.sleep(1.5)
+    print ("Dit verhaal heeft 4 verschillende eindes")
+    time.sleep(2)
+    print ("Je hebt maar 1 goed einde dus good luck on your journey")
+    deel1()
+    
+
+def deel1():
     print ("Hallo " + inputnaam)
     time.sleep(2)
     print ("Jij bevindt je nu in ...")
@@ -23,14 +24,84 @@ def Verhaalstukje1():
     time.sleep(2)
     print (inputnaam + " ...")
 
-    antwoord = input("Maak een keuze, A of B?")
-    if antwoord == "A":
-        Verhaalstukje2()
-    elif antwoord == "B":
-        Verhaalstukje3()
-    else:
-        print("Je kunt alleen antwoorden met A of B.")
-        Verhaalstukje1()
+    while True:
+        antwoord = input("Maak een keuze, A of B?")
+        if antwoord == "A":
+            deel2()
+            break
+        elif antwoord == "B":
+            deel3()
+            break
+        else:
+            print("Je kunt alleen antwoorden met A of B.")
+            deel1()
+
+def deel2()
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deel0()
 
